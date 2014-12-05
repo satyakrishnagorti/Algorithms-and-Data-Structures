@@ -53,7 +53,9 @@ int main(){
 	int path[10];
 
 	cout<<"Root to Leaf Paths:\n";	
-	printRootToLeafPaths(root, path, 0);
+	printrootToLeafPaths(root, path, 0);
+
+	cout<<"The no of unique BST's with 5 nodes:"<<noOfUniqueBST(5)<<endl;
 }
 
 

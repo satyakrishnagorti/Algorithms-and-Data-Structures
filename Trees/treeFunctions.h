@@ -122,4 +122,15 @@ void printrootToLeafPaths(node *root,int path[],int length){
 	}
 }
 
-
+int noOfUniqueBST(int n)
+{
+	// Returns the no of unique bsts that can be formed using n nodes.
+	if(n<=1)
+		return 1;
+	int sum=0;
+	for(int i=1;i<=n;i++)
+	{
+		sum+=noOfUniqueBST(i-1)*noOfUniqueBST(n-i);
+	}
+	return sum;
+}
