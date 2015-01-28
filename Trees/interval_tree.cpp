@@ -74,5 +74,11 @@ int main()
    for (int i = 0; i < 6; i++)
         root = insert(root, it[i]);
   inOrderTraversal(root);
+  Interval it1 = {35,45};
+  Interval *res = search(root,it1);
+  if(res==NULL)
+    cout<<"No such interval"<<endl;
+  else
+    cout<<"Overlaps with interval:{"<<res->low<<","<<res->high<<"}"<<endl;
   return 0;
 }

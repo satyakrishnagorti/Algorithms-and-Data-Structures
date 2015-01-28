@@ -98,7 +98,7 @@ vector<int> levelSum(node *root){
 	return v;
 }
 
-void printPath(int path[],int length)                 //Utility function to print current root-leaf path used by printrootToLeafPaths() 
+void printPath(int path[],int length)                 //Utility function to print current root-leaf path used by printrootToLeafPaths()
 {
 	for(int i=0;i<length;i++)
 		cout<<path[i]<<" ";
